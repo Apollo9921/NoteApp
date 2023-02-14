@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="totalNotes">%s notas adicionadas</string>
+    <string name="searchNotes">Pesquisar por notas pelo título</string>
+    <string name="emptyNotes">Sem notas adicionadas</string>
+    <string name="totalTasksAndCompleted">%s/%s tarefas completas</string>
+    <string name="noResults">Sem resultados</string>
+    <string name="emptyFields">Campos vazios</string>
+    <string name="noteAdded">Nota adicionada com successo</string>
+    <string name="addNote">Adicionar Nota</string>
+    <string name="insertTitle">Inserir Título</string>
+    <string name="descriptionNote">Descreva a nota</string>
+    <string name="addTask">Adicionar Tarefa</string>
+    <string name="createTask">Criar Tarefa</string>
+    <string name="createNote">Criar Nota</string>
+    <string name="fieldsEqual">Nenhum dos campos foi atualizado</string>
+    <string name="noteUpdated">Nota atualizada com sucesso</string>
+    <string name="updateNote">Atualizar Nota</string>
+</resources>
