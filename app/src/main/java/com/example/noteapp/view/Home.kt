@@ -168,7 +168,9 @@ private fun TopBar() {
                             }
                         )
                         .clickable {
-                            showSearchTextField.value = true
+                            if (notesList.isNotEmpty()) {
+                                showSearchTextField.value = true
+                            }
                         }
                 )
             }
