@@ -38,10 +38,4 @@ class NoteViewModel(application: Context): ViewModel() {
             repository.deleteNote(note)
         }
     }
-
-    fun searchNote(query: String) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.searchNote(query)
-        }
-    }
 }

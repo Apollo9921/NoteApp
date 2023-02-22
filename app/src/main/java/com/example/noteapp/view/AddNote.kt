@@ -291,6 +291,9 @@ private fun Form() {
                     Button(
                         onClick = {
                             if (task.value != "") {
+                                if (task.value.contains(",")) {
+                                    task.value = task.value.replace(oldValue = ",", newValue = ";")
+                                }
                                 tasksInserted.add(task.value)
                                 tasksToDoInserted.add("false")
                                 task.value = ""

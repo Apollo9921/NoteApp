@@ -109,6 +109,10 @@ private fun TopBar() {
                     }
                 }
             }
+    } else {
+        if (notesListSearched.isNotEmpty()) {
+            notesListSearched.clear()
+        }
     }
     Column {
         Row(
@@ -375,24 +379,28 @@ private fun ListNotes(navHostController: NavHostController) {
                                     },
                                     fontFamily = FontFamily.SansSerif,
                                     fontWeight = FontWeight.Bold,
-                                    maxLines = 2,
-                                    overflow = TextOverflow.Ellipsis
+                                    maxLines = 3,
+                                    overflow = TextOverflow.Ellipsis,
+                                    modifier = Modifier.width(width / 2)
                                 )
                                 Spacer(modifier = Modifier.padding(5.dp))
                                 if (noteSelected.value && item == notesList[i]) {
                                     Image(
                                         painter = painterResource(id = R.drawable.check),
                                         contentDescription = null,
+                                        alignment = Alignment.TopEnd,
                                         colorFilter = ColorFilter.tint(Green),
-                                        modifier = Modifier.size(
-                                            if (width <= small) {
-                                                40.dp
-                                            } else if (width <= normal) {
-                                                45.dp
-                                            } else {
-                                                50.dp
-                                            }
-                                        )
+                                        modifier = Modifier
+                                            .fillMaxSize()
+                                            .size(
+                                                if (width <= small) {
+                                                    40.dp
+                                                } else if (width <= normal) {
+                                                    45.dp
+                                                } else {
+                                                    50.dp
+                                                }
+                                            )
                                     )
                                 }
                             }
@@ -541,24 +549,28 @@ private fun ListNotes(navHostController: NavHostController) {
                                     },
                                     fontFamily = FontFamily.SansSerif,
                                     fontWeight = FontWeight.Bold,
-                                    maxLines = 2,
-                                    overflow = TextOverflow.Ellipsis
+                                    maxLines = 3,
+                                    overflow = TextOverflow.Ellipsis,
+                                    modifier = Modifier.width(width / 2)
                                 )
                                 Spacer(modifier = Modifier.padding(5.dp))
                                 if (noteSelected.value && item == notesListSearched[i]) {
                                     Image(
                                         painter = painterResource(id = R.drawable.check),
                                         contentDescription = null,
+                                        alignment = Alignment.TopEnd,
                                         colorFilter = ColorFilter.tint(Green),
-                                        modifier = Modifier.size(
-                                            if (width <= small) {
-                                                40.dp
-                                            } else if (width <= normal) {
-                                                45.dp
-                                            } else {
-                                                50.dp
-                                            }
-                                        )
+                                        modifier = Modifier
+                                            .fillMaxSize()
+                                            .size(
+                                                if (width <= small) {
+                                                    40.dp
+                                                } else if (width <= normal) {
+                                                    45.dp
+                                                } else {
+                                                    50.dp
+                                                }
+                                            )
                                     )
                                 }
                             }

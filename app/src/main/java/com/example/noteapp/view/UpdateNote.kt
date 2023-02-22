@@ -167,7 +167,7 @@ private fun Form(checkedState: ArrayList<Boolean>) {
                     },
                     placeholder = {
                         Text(
-                            text = "Update Title",
+                            text = stringResource(id = R.string.updateTitle),
                             color = Color.Gray,
                             fontSize =
                             if (width <= small) {
@@ -213,7 +213,7 @@ private fun Form(checkedState: ArrayList<Boolean>) {
                         descriptionUpdate.value = it
                     }, placeholder = {
                         Text(
-                            text = "Update the note",
+                            text = stringResource(id = R.string.updateNote),
                             color = Color.Gray,
                             fontSize =
                             if (width <= small) {

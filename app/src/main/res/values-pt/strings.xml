@@ -16,4 +16,5 @@
     <string name="fieldsEqual">Nenhum dos campos foi atualizado</string>
     <string name="noteUpdated">Nota atualizada com sucesso</string>
     <string name="updateNote">Atualizar Nota</string>
+    <string name="updateTitle">Atualizar Título</string>
 </resources>
